@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tournament table</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+            <button class="menu-button" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="sidebar" id="sidebar">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="../main/index.html">Main</a></li>
+                    <li><a href="../history/history.html">History</a></li>
+                    <li><a href="../logo/logo.html" >Logo</a></li>
+                </ul>
+            </nav>
+
+            <div class="container">
+                <header>
+                    <a href="../main/index.html" class="logo">
+                        <i class="fas fa-quidditch"></i>
+                        Hogwarts Gryffindor Magic Football Team
+                    </a>
+                </header>
+
+                <h1 class="page-title">Tournament table</h1>
+                <table class="tournament-table">
+                    <thead>
+                        <tr>
+                            <th>Place</th>
+                            <th>Team</th>
+                            <th>Games</th>
+                            <th>Victory</th>
+                            <th>Draws</th>
+                            <th>Loses</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <trbody>
+                        <tr class="current-team">
+                            <td>🥇 1</td>
+                            <td>Hogwarts Gryffindor</td>
+                            <td>10</td>
+                            <td>8</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Hogwarts Ravenclaw</td>
+                            <td>10</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Beauxbatons Academy</td>
+                            <td>10</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Durmstrang Institute</td>
+                            <td>10</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Hogwarts Hufflepuff</td>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Hogwarts Slytherin</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>8</td>
+                            <td>4</td>
+                        </tr>
+                    </trbody>
+                </table>
+            </div>
+        <script src="../main/script.js"></script>
+    </body>
+</html>

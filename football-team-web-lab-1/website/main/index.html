@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hogwarts Gryffindor Magic Football Team</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <button class="menu-button" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="sidebar" id="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="../main/index.html">Main</a></li>
+                <li><a href="../history/history.html">History</a></li>
+                <li><a href="../tournament-table/tournament-table.html">Tournament table</a></li>
+                <li><a href="../logo/logo.html" >Logo</a></li>
+            </ul>
+        </nav>
+
+    <div class="container">
+        <header>
+            <a href="../main/index.html" class="logo">
+                <i class="fas fa-quidditch"></i>
+                Hogwarts Gryffindor Magic Football Team
+            </a>
+        </header>
+
+        <section class="hero-section">
+            <h1>Welcome</h1>
+            <p>We are happy to see U in Hogwarts Gryffindor team website. Enjoy your journey</p>
+        </section>
+
+        <section class="events">
+            <h2 class="section-title">Events</h2>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/08/harry-potter-quidditch-champions-harry-holding-the-golden-snitch-cropped.jpg" width=370 height=200 alt=""></img>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">September 19, 2025</div>
+                        <h3 class="event-title">Incredible comeback in the final!</h3>
+                        <p class="event-desc">Trailing 0-2, they achieved the impossible. The secret lies in the last minute and the incredible savior Harry.</p>
+                        <a href="../events/event-1.html" class="event-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="data:image/jpeg;base64,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" width=370 height=200 alt=""></img>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">September 1, 2025</div>
+                        <h3 class="event-title">Tournament for the Cup of the Fire Wizard</h3>
+                        <p class="event-desc">Who would have thought that mud and rain would become their allies? The story of one heroic fall into the mud.</p>
+                        <a href="../events/event-2.html" class="event-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="https://gamingtrend.com/content/images/2025/02/quidditch1-e1725373255771-1.jpg" width=370 height=200 alt=""></img>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">August 25, 2025</div>
+                        <h3 class="event-title">Charity match against the Hogwarts Ghosts</h3>
+                        <p class="event-desc">How to play soccer with a team that passes the ball? A tactical victory of the mind over intangible opponents.</p>
+                        <a href="../events/event-3.html" class="event-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="https://d2rd7etdn93tqb.cloudfront.net/wp-content/uploads/2017/02/harry-potter-quidditch-020217.jpg" width=370 height=200 alt=""></img>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">August 20, 2025</div>
+                        <h3 class="event-title">Training camp in the Forbidden Forest</h3>
+                        <p class="event-desc">When training turned into a mission for survival. What can you find in the forest besides a lost ball?</p>
+                        <a href="../events/event-4.html" class="event-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="simple-form">
+            <h2>Quick Registration</h2>
+            <form class="minimal-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-row">
+                    <select>
+                        <option>Select House</option>
+                        <option>Gryffindor</option>
+                        <option>Slytherin</option>
+                        <option>Hufflepuff</option>
+                        <option>Ravenclaw</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label class="option">
+                        <input type="checkbox"> Quidditch Experience
+                    </label>
+                    <label class="option">
+                        <input type="checkbox"> Magic Training
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label class="option">
+                        <input type="radio" name="position" value="player" checked> Player
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="position" value="fan"> Fan
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit">Join Team</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+        <a href="" class="btn">Buy tickets</a>
+        <footer>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>

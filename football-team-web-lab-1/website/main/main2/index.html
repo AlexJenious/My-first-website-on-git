@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Gryffindor Magic Football Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<button class="menu-button" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<nav class="sidebar" id="sidebar">
+    <h2>Menu</h2>
+    <ul>
+        <li><a href="../main/index.html">Main</a></li>
+        <li><a href="../history/history.html">History</a></li>
+        <li><a href="../tournament-table/tournament-table.html">Tournament table</a></li>
+        <li><a href="../logo/logo.html" >Logo</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <header>
+        <a href="../main/index.html" class="logo">
+            <i class="fas fa-quidditch"></i>
+            Hogwarts Gryffindor Magic Football Team
+        </a>
+    </header>
+
+    <section class="hero-section">
+        <h1>Welcome</h1>
+        <p>We are happy to see U in Hogwarts Gryffindor team website. Enjoy your journey</p>
+    </section>
+
+    <section class="events">
+        <h2 class="section-title">Events</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/08/harry-potter-quidditch-champions-harry-holding-the-golden-snitch-cropped.jpg" width=370 height=200 alt=""></img>
+                </div>
+                <div class="event-content">
+                    <div class="event-date">September 19, 2025</div>
+                    <h3 class="event-title">Incredible comeback in the final!</h3>
+                    <p class="event-desc">Trailing 0-2, they achieved the impossible. The secret lies in the last minute and the incredible savior Harry.</p>
+                    <a href="../events/event-1.html" class="event-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="https://static.wikia.nocookie.net/harrypotter/images/3/36/B3C15M2_Winner.png/revision/latest?cb=20171216155800" width=370 height=200 alt=""></img>
+                </div>
+                <div class="event-content">
+                    <div class="event-date">September 1, 2025</div>
+                    <h3 class="event-title">Tournament for the Cup of the Fire Wizard</h3>
+                    <p class="event-desc">Who would have thought that mud and rain would become their allies? The story of one heroic fall into the mud.</p>
+                    <a href="../events/event-2.html" class="event-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="https://gamingtrend.com/content/images/2025/02/quidditch1-e1725373255771-1.jpg" width=370 height=200 alt=""></img>
+                </div>
+                <div class="event-content">
+                    <div class="event-date">August 25, 2025</div>
+                    <h3 class="event-title">Charity match against the Hogwarts Ghosts</h3>
+                    <p class="event-desc">How to play soccer with a team that passes the ball? A tactical victory of the mind over intangible opponents.</p>
+                    <a href="../events/event-3.html" class="event-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-img">
+                    <img src="https://d2rd7etdn93tqb.cloudfront.net/wp-content/uploads/2017/02/harry-potter-quidditch-020217.jpg" width=370 height=200 alt=""></img>
+                </div>
+                <div class="event-content">
+                    <div class="event-date">August 20, 2025</div>
+                    <h3 class="event-title">Training camp in the Forbidden Forest</h3>
+                    <p class="event-desc">When training turned into a mission for survival. What can you find in the forest besides a lost ball?</p>
+                    <a href="../events/event-4.html" class="event-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-form">
+    <h2>Quick Registration</h2>
+    <form class="form">
+        <!-- 1. Текстові поля -->
+        <div class="form-row">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email" required>
+        </div>
+
+        <!-- 2. Випадаючий список -->
+        <div class="form-row">
+            <select>
+                <option>Select House</option>
+                <option>Gryffindor</option>
+                <option>Slytherin</option>
+                <option>Hufflepuff</option>
+                <option>Ravenclaw</option>
+            </select>
+        </div>
+
+        <!-- 3. Прапорці (checkboxes) -->
+        <div class="form-row">
+            <label class="option">
+                <input type="checkbox"> Quidditch Experience
+            </label>
+            <label class="option">
+                <input type="checkbox"> Magic Training
+            </label>
+        </div>
+
+        <!-- 4. Перемикачі (radio buttons) -->
+        <div class="form-row">
+            <label class="option">
+                <input type="radio" name="position" value="player" checked> Player
+            </label>
+            <label class="option">
+                <input type="radio" name="position" value="fan"> Fan
+            </label>
+        </div>
+
+        <!-- 5. Кнопки -->
+        <div class="form-row">
+            <button type="submit">Join Team</button>
+            <button type="reset">Clear Form</button>
+        </div>
+    </form>
+</section>
+    <a href="" class="btn">Buy tickets</a>
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

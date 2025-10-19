@@ -1,0 +1,148 @@
+/* 5) Фон для всього документу - зображення сніжинки */
+body {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text x="30" y="60" font-size="50" fill="lightblue" opacity="0.3">❄</text></svg>');
+    background-repeat: repeat;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Основний контейнер */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* 1) Автобіографія - заголовок h1 */
+header h1 {
+    text-align: left;
+    font-family: 'Palatino Linotype', serif;
+    font-size: 18px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2em; /* відстань між символами = 2 розміри елемента */
+}
+
+header p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* 2) Зміст - Comic Sans MS, 16, не підкреслений, синій фон */
+.toc {
+    background-color: blue;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.toc strong {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    color: #FFD700; /* золотий колір для заголовка змісту */
+    display: block;
+    margin-bottom: 15px;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc li {
+    margin-bottom: 10px;
+}
+
+.toc a {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none; /* не підкреслений */
+}
+
+.toc a:hover {
+    color: #FFD700;
+}
+
+/* 2) Заголовки розділів - різні кольори, Comic Sans MS */
+section h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Різні кольори для заголовків */
+#section-1 h2 {
+    background-color: #FF6B6B; /* червоний */
+}
+
+#section-2 h2 {
+    background-color: #4ECDC4; /* бірюзовий */
+}
+
+#section-3 h2 {
+    background-color: #95E1D3; /* м'ятний */
+}
+
+/* 3) Перший розділ - вирівнювання по ширині, Times New Roman 14, одинарний інтервал */
+#section-1 p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 1; /* одинарний міжрядковий інтервал */
+    margin-bottom: 15px;
+}
+
+/* 3) Посилання в першому розділі як звичайний жирний текст */
+#section-1 a {
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 4) Другий і третій абзац розділів 2 і 3 - по центру, жовтий фон */
+#section-2 p:nth-child(3),
+#section-2 p:nth-child(4),
+#section-3 p:nth-child(3),
+#section-3 p:nth-child(4) {
+    text-align: center;
+    background-color: yellow;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+/* 4) Назва ВНЗ - білий підкреслений текст на синьому фоні */
+.university {
+    background-color: blue;
+    color: white;
+    text-decoration: underline;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+/* Звичайні абзаци */
+section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 8px;
+    font-size: 14px;
+    color: #666;
+}

@@ -1,0 +1,137 @@
+body {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text x="30" y="60" font-size="50" fill="lightblue" opacity="0.3">❄</text></svg>');
+    background-repeat: repeat;
+    margin: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    text-align: left;
+    font-family: 'Palatino Linotype', serif;
+    font-size: 18px;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2em;
+}
+
+header p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.toc {
+    background-color: blue;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.toc strong{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    color: #FFD700;
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.toc li {
+    margin-bottom: 10px;
+}
+
+.toc a {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+.toc .toc1 a {
+    color: #abff3b;
+}
+.toc .toc2 a {
+    color: #54ff64;
+}
+.toc .toc3 a {
+    color: #4eff35;
+}
+
+.toc a:hover {
+    background: #4ECDC4;
+}
+
+section h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#section-1 h2 {
+    background-color: #FF6B6B;
+}
+
+#section-2 h2 {
+    background-color: #4ECDC4;
+}
+
+#section-3 h2 {
+    background-color: #95E1D3;
+}
+
+#section-1 p {
+    text-align: justify;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+}
+
+#section-2 p,
+#section-3 p {
+    text-align: center;
+    background-color: yellow;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.university {
+    background-color: blue;
+    color: white;
+    text-decoration: underline;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 8px;
+    font-size: 14px;
+    color: #666;
+}
