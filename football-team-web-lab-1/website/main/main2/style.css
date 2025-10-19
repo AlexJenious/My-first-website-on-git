@@ -308,49 +308,6 @@ footer {
     }
 }
 
-.simple-form {
-    background: rgba(255,255,255,0.1);
-    padding: 30px;
-    margin: 40px 0;
-    border-radius: 10px;
-}
-
-.minimal-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.form-row {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-.form-row input,
-.form-row select,
-.form-row button {
-    flex: 1;
-    padding: 12px;
-    border: 2px solid #fdbb2d;
-    border-radius: 5px;
-    background: rgba(255,255,255,0.1);
-    color: white;
-}
-
-.option {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.form-row button {
-    background: #fdbb2d;
-    color: #1a2a6c;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 .registration-form {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
