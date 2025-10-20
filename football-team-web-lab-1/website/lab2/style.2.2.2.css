@@ -43,6 +43,7 @@ header p {
     display: block;
     margin-bottom: 15px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .toc ul {
@@ -59,7 +60,7 @@ header p {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 16px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     color: inherit;
 }
 .toc .toc1 a {
@@ -74,6 +75,8 @@ header p {
 
 .toc a:hover {
     background: #4ECDC4;
+    padding: 2px 5px;
+    border-radius: 3px;
 }
 
 section h2 {
@@ -99,9 +102,17 @@ section h2 {
 
 #section-1 p {
     text-align: justify;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Times New Roman', serif;
     font-size: 14px;
-    line-height: 1;
+    line-height: 1.0;
+    margin-bottom: 15px;
+
+}
+
+#section-1 a {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
 }
 
 #section-2 p,
@@ -114,11 +125,16 @@ section h2 {
 }
 
 .university {
-    background-color: blue;
+    display: inline-block;
+}
+
+.university p {
+    background-color: blue !important;
     color: white;
     text-decoration: underline;
-    padding: 2px 8px;
+    padding: 5px 10px;
     border-radius: 3px;
+    display: inline;
 }
 
 section p {
