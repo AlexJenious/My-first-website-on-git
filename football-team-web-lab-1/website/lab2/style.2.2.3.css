@@ -127,6 +127,25 @@ section p {
     line-height: 1.6;
 }
 
+#matrix-task2 {
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#matrix-task2 h2 {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+#matrix-task3 {
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
 footer {
     text-align: center;
     margin-top: 40px;
