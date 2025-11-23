@@ -73,9 +73,63 @@
     <div id="res-task3"></div>
 </section>
 
+<section id="matrix-lab5">
+    <h2>Лабораторна робота №5 - Квадратні матриці</h2>
+
+    <div>
+        <label>Розмірність матриці:
+            <input type="number" id="matrixSize" value="3" min="2" max="6">
+        </label>
+        <button onclick="createMatrixInputs()">Створити матрицю</button>
+    </div>
+
+    <div>
+        <h3>Матриця A:</h3>
+        <div id="matrixA-inputs"></div>
+
+        <h3>Матриця B:</h3>
+        <div id="matrixB-inputs"></div>
+    </div>
+
+    <div>
+        <button onclick="displayMatrixA()">Показати A</button>
+        <button onclick="displayMatrixB()">Показати B</button>
+        <button onclick="transposeMatrixA()">Транспонувати A</button>
+        <button onclick="transposeMatrixB()">Транспонувати B</button>
+        <button onclick="sumMatrices()">A + B</button>
+        <button onclick="subtractMatrices()">A - B</button>
+        <button onclick="showMaxCombined()">Найбільший елемент (завд.3)</button>
+    </div>
+
+    <div>
+        <h3>Множення матриці на вектор:</h3>
+        <div id="vector-inputs"></div>
+        <button onclick="multiplyMatrixByVector()">A * Вектор</button>
+    </div>
+
+    <div id="head-of-matrix"></div>
+    <div id="matrix-results"></div>
+</section>
+
+<section id="exam-section">
+    <h2>Складання екзаменів</h2>
+
+    <div>
+        <label>Предмет: <input type="text" id="examSubject" value="Веб-технології"></label><br>
+        <label>Викладач: <input type="text" id="examTeacher" value="Викладач Товтин"></label><br>
+        <label>Дата: <input type="date" id="examDate" value="2025-12-13"></label><br>
+        <label>Група: <input type="text" id="examGroup" value="КН-2"></label><br>
+
+        <button onclick="displayExamLiteral()">Показати літерал об'єкта</button>
+        <button onclick="createExamWithConstructor()">Створити конструктором</button>
+    </div>
+
+    <div id="exam-results"></div>
+</section>
+
 <footer>
     <p>Документ створено як шаблон. Замініть заглушковий текст на власний зміст.</p>
 </footer>
-<script src="script_lab_4.js"></script>
+<script src="script_lab_5.js"></script>
 </body>
 </html>

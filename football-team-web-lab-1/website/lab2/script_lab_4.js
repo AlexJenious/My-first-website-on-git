@@ -89,7 +89,7 @@ function generateMatrix2() {
             userInput.type = "number";
             userInput.id = `cell2-${i}-${j}`;
             userInput.placeholder = `0`;
-            userInput.value = `${i - j}`;
+            userInput.value = `-12`;
             cell.appendChild(userInput);
             row.appendChild(cell);
         }
