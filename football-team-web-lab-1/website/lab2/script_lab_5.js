@@ -227,9 +227,31 @@ function multiplyMatrixByVector() {
         vector.push(parseFloat(document.getElementById(`vector-${i}`).value) || 0);
     }
     const product = matrixA.multiplyByVector(vector);
+    ShowMessage('head-of-matrix', `<h3>Добуток матриці A на вектор [${vector.join(', ')}]:</h3>`);
     const res = document.getElementById('matrix-results');
-    res.innerHTML = `<h3>Добуток матриці A на вектор [${vector.join(', ')}]:</h3>`;
-    res.innerHTML += `<p>[${product.map(val => val.toFixed(2)).join(', ')}]</p>`;
+    res.innerHTML = '';
+    const matrixTitle = document.createElement('h4');
+    matrixTitle.textContent = 'Матриця A:';
+    res.appendChild(matrixTitle);
+    matrixA.display('matrix-results');
+    const resultTitle = document.createElement('h4');
+    resultTitle.textContent = 'Результат (вектор):';
+    res.appendChild(resultTitle);
+    const table = document.createElement('table');
+    table.style.border = '1px solid black';
+    table.style.borderCollapse = 'collapse';
+    table.style.margin = '10px';
+    for (let i = 0; i < product.length; i++) {
+        const row = document.createElement('tr');
+        const cell = document.createElement('td');
+        cell.textContent = product[i];
+        cell.style.border = '0.5px solid black';
+        cell.style.padding = '20px';
+        cell.style.textAlign = 'center';
+        row.appendChild(cell);
+        table.appendChild(row);
+    }
+    res.appendChild(table);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
